@@ -11,7 +11,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
         features = {"F:\\CucumberProject\\Features\\Customer.feature"},
         glue = "StepDefinition",
-        plugin = {"pretty", "html:reports/report1.html"},
+        plugin = {"pretty", "html:reports/report1.html", "json:reports/report1.json"},
         monochrome = true,
         dryRun = false,
         tags = "@Smoke"
